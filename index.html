@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR CODE - Coding Group</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <a href="#" class="logo">AIR CODE</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">☀️</button></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">🌐 EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>AIR CODE</h1>
+            <p>Elevating Code to New Heights</p>
+            <div>
+                <a href="#team" class="cta-button">Meet Our Team</a>
+                <a href="#contact" class="cta-button reserve">Reserve</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages-section">
+        <div class="container">
+            <h2 class="section-title">Our Tech Stack</h2>
+            <div class="hexagon-container">
+                <div class="hex-network">
+                    <div class="hex-connections" id="hexConnections"></div>
+                    <div class="hex-grid">
+                        <div class="hexagon" data-lang="JavaScript" onclick="showLanguageInfo('JavaScript')">
+                            <span>JS</span>
+                        </div>
+                        <div class="hexagon" data-lang="Python" onclick="showLanguageInfo('Python')">
+                            <span>Python</span>
+                        </div>
+                        <div class="hexagon" data-lang="React" onclick="showLanguageInfo('React')">
+                            <span>React</span>
+                        </div>
+                        <div class="hexagon" data-lang="Node.js" onclick="showLanguageInfo('Node.js')">
+                            <span>Node</span>
+                        </div>
+                        <div class="hexagon" data-lang="Java" onclick="showLanguageInfo('Java')">
+                            <span>Java</span>
+                        </div>
+                        <div class="hexagon" data-lang="C++" onclick="showLanguageInfo('C++')">
+                            <span>C++</span>
+                        </div>
+                        <div class="hexagon" data-lang="Go" onclick="showLanguageInfo('Go')">
+                            <span>Go</span>
+                        </div>
+                        <div class="hexagon" data-lang="Rust" onclick="showLanguageInfo('Rust')">
+                            <span>Rust</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-description">
+                    <h3>Our Technology Ecosystem</h3>
+                    <p>At AIR CODE, we leverage a diverse and powerful tech stack to deliver cutting-edge solutions. Our expertise spans across multiple programming languages and frameworks, enabling us to tackle projects of any scale and complexity.</p>
+                    
+                    <p>From frontend development with React and modern JavaScript to robust backend systems using Python, Java, and Node.js, we ensure that every project is built with the right tools for optimal performance and maintainability.</p>
+                    
+                    <div class="tech-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Languages</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/abol.jpg" alt="Abol" class="member-image">
+                            <h3 class="member-name">Abol</h3>
+                            <p class="member-role">Full Stack Developer</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Abol</h3>
+                            <p class="member-description">Passionate about creating seamless user experiences and robust backend systems.</p>
+                            <div class="skills">
+                                <span class="skills-tag">JavaScript</span>
+                                <span class="skills-tag">React</span>
+                                <span class="skills-tag">Node.js</span>
+                                <span class="skills-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/araz.jpg" alt="Araz" class="member-image">
+                            <h3 class="member-name">Araz</h3>
+                            <p class="member-role">UI/UX Designer</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Araz</h3>
+                            <p class="member-description">Creative designer focused on intuitive interfaces and exceptional user experiences.</p>
+                            <div class="skills">
+                                <span class="skills-tag">Figma</span>
+                                <span class="skills-tag">Adobe XD</span>
+                                <span class="skills-tag">CSS</span>
+                                <span class="skills-tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/m.jpg" alt="M" class="member-image">
+                            <h3 class="member-name">M</h3>
+                            <p class="member-role">Backend Engineer</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>M</h3>
+                            <p class="member-description">Nothing Speacial.</p>
+                            <div class="skills">
+                                <span class="skills-tag">Any</span>
+                                <span class="skills-tag">F#</span>
+                                <span class="skills-tag">Data</span>
+                                <span class="skills-tag">Py</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/migili.jpg" alt="MIG" class="member-image">
+                            <h3 class="member-name">MIGILI</h3>
+                            <p class="member-role">full-stack</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>MIGLILI</h3>
+                            <p class="member-description">Expert in Everything.</p>
+                            <div class="skills">
+                                <span class="skills-tag">WEB</span>
+                                <span class="skills-tag">SOFTWARE</span>
+                                <span class="skills-tag">Python</span>
+                                <span class="skills-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/zahra.jpg" alt="Z.R" class="member-image">
+                            <h3 class="member-name">Zahra</h3>
+                            <p class="member-role">Web Designer</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Z.R</h3>
+                            <p class="member-description">Specialized in Web and user experience.</p>
+                            <div class="skills">
+                                <span class="skills-tag">Flutter</span>
+                                <span class="skills-tag">CSS</span>
+                                <span class="skills-tag">HTML</span>
+                                <span class="skills-tag">Kotlin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/mahdieh.jpg" alt="M.A" class="member-image">
+                            <h3 class="member-name">Mahdieh</h3>
+                            <p class="member-role">Data Scientist</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>M.A</h3>
+                            <p class="member-description">Expert in machine learning algorithms and data analytics solutions.</p>
+                            <div class="skills">
+                                <span class="skills-tag">C#</span>
+                                <span class="skills-tag">MySQL</span>
+                                <span class="skills-tag">Rust</span>
+                                <span class="skills-tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" action="mailto:aircode@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

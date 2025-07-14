@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ایر کد - گروه برنامه نویسی</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <body data-theme="dark">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <a href="#" class="logo">ایر کد</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#languages">زبان‌ها</a></li>
+                <li><a href="#team">تیم</a></li>
+                <li><a href="#contact">تماس</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">☀️</button></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">🌐 فا</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ایر کد</h1>
+            <p>ارتقای کد به سطوح جدید</p>
+            <div>
+                <a href="#team" class="cta-button">آشنایی با تیم ما</a>
+                <a href="#contact" class="cta-button reserve">رزرو</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages-section">
+        <div class="container">
+            <h2 class="section-title">تکنولوژی‌های ما</h2>
+            <div class="hexagon-container">
+                <div class="hex-network">
+                    <div class="hex-connections" id="hexConnections"></div>
+                    <div class="hex-grid">
+                        <div class="hexagon" data-lang="JavaScript" onclick="showLanguageInfo('JavaScript')">
+                            <span>JS</span>
+                        </div>
+                        <div class="hexagon" data-lang="Python" onclick="showLanguageInfo('Python')">
+                            <span>Python</span>
+                        </div>
+                        <div class="hexagon" data-lang="React" onclick="showLanguageInfo('React')">
+                            <span>React</span>
+                        </div>
+                        <div class="hexagon" data-lang="Node.js" onclick="showLanguageInfo('Node.js')">
+                            <span>Node</span>
+                        </div>
+                        <div class="hexagon" data-lang="Java" onclick="showLanguageInfo('Java')">
+                            <span>Java</span>
+                        </div>
+                        <div class="hexagon" data-lang="C++" onclick="showLanguageInfo('C++')">
+                            <span>C++</span>
+                        </div>
+                        <div class="hexagon" data-lang="Go" onclick="showLanguageInfo('Go')">
+                            <span>Go</span>
+                        </div>
+                        <div class="hexagon" data-lang="Rust" onclick="showLanguageInfo('Rust')">
+                            <span>Rust</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-description">
+                    <h3>اکوسیستم تکنولوژی ما</h3>
+                    <p>در ایر کد، ما از مجموعه‌ای متنوع و قدرتمند از تکنولوژی‌ها برای ارائه راه‌حل‌های پیشرفته استفاده می‌کنیم. تخصص ما در زبان‌ها و فریم‌ورک‌های مختلف برنامه‌نویسی به ما امکان می‌دهد پروژه‌هایی در هر مقیاس و پیچیدگی را انجام دهیم.</p>
+                    
+                    <p>از توسعه فرانت‌اند با React و جاوااسکریپت مدرن تا سیستم‌های بک‌اند قدرتمند با پایتون، جاوا و Node.js، ما اطمینان حاصل می‌کنیم که هر پروژه با ابزارهای مناسب برای عملکرد و نگهداری بهینه ساخته می‌شود.</p>
+                    
+                    <div class="tech-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">۸+</div>
+                            <div class="stat-label">زبان برنامه‌نویسی</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">۵۰+</div>
+                            <div class="stat-label">پروژه</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">۱+</div>
+                            <div class="stat-label">سال تجربه</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">۹۵٪</div>
+                            <div class="stat-label">رضایت مشتری</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">تیم ما</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/abol.jpg" alt="ابول" class="member-image">
+                            <h3 class="member-name">ابول</h3>
+                            <p class="member-role">توسعه‌دهنده فول استک</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>ابول</h3>
+                            <p class="member-description">مشتاق ایجاد تجربه‌های کاربری یکپارچه و سیستم‌های بک‌اند قوی.</p>
+                            <div class="skills">
+                                <span class="skills-tag">جاوااسکریپت</span>
+                                <span class="skills-tag">ری‌اکت</span>
+                                <span class="skills-tag">نود</span>
+                                <span class="skills-tag">پایتون</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/araz.jpg" alt="آراز" class="member-image">
+                            <h3 class="member-name">آراز</h3>
+                            <p class="member-role">طراح رابط کاربری</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>آراز</h3>
+                            <p class="member-description">طراح خلاق متمرکز بر رابط‌های کاربری بدیهی و تجربه‌های کاربری استثنایی.</p>
+                            <div class="skills">
+                                <span class="skills-tag">فیگما</span>
+                                <span class="skills-tag">ادوبی XD</span>
+                                <span class="skills-tag">CSS</span>
+                                <span class="skills-tag">نمونه‌سازی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/m.jpg" alt="ام" class="member-image">
+                            <h3 class="member-name">ام</h3>
+                            <p class="member-role">مهندس بک‌اند</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>ام</h3>
+                            <p class="member-description">چیز خاصی نیست.</p>
+                            <div class="skills">
+                                <span class="skills-tag">همه</span>
+                                <span class="skills-tag">F#</span>
+                                <span class="skills-tag">داده</span>
+                                <span class="skills-tag">پای</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/migili.jpg" alt="میگیلی" class="member-image">
+                            <h3 class="member-name">میگیلی</h3>
+                            <p class="member-role">فول استک</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>میگیلی</h3>
+                            <p class="member-description">متخصص در همه چیز.</p>
+                            <div class="skills">
+                                <span class="skills-tag">وب</span>
+                                <span class="skills-tag">نرم‌افزار</span>
+                                <span class="skills-tag">پایتون</span>
+                                <span class="skills-tag">جاوااسکریپت</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/zahra.jpg" alt="زهرا" class="member-image">
+                            <h3 class="member-name">زهرا</h3>
+                            <p class="member-role">طراح وب</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>زهرا</h3>
+                            <p class="member-description">متخصص در طراحی وب و تجربه کاربری.</p>
+                            <div class="skills">
+                                <span class="skills-tag">فلاتر</span>
+                                <span class="skills-tag">CSS</span>
+                                <span class="skills-tag">HTML</span>
+                                <span class="skills-tag">کاتلین</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/mahdieh.jpg" alt="مهدیه" class="member-image">
+                            <h3 class="member-name">مهدیه</h3>
+                            <p class="member-role">دانشمند داده</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>مهدیه</h3>
+                            <p class="member-description">متخصص در الگوریتم‌های یادگیری ماشین و راه‌حل‌های تحلیل داده.</p>
+                            <div class="skills">
+                                <span class="skills-tag">C#</span>
+                                <span class="skills-tag">MySQL</span>
+                                <span class="skills-tag">Rust</span>
+                                <span class="skills-tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">تماس با ما</h2>
+            <form class="contact-form" action="mailto:aircode@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">نام</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ایمیل</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">موضوع</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">پیام</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">ارسال پیام</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
